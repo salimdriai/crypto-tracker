@@ -65,7 +65,6 @@ const Chart = (props) => {
       data={{ points: sparkline, smoothingStrategy: 'bezier' }}
     >
       <View style={styles.chartWrapper}>
-        {/* Titles */}
         <View style={styles.titlesWrapper}>
           <View style={styles.upperTitles}>
             <View style={styles.upperLeftTitle}>

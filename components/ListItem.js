@@ -10,6 +10,7 @@ const ListItem = (props) => {
     logoUrl,
     onPress,
   } = props
+  
   const priceChangeColor = priceChangePercentage7d > 0 ? '#34C759' : '#FF3B30'
 
   return (
