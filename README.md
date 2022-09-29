@@ -1,12 +1,15 @@
-# CryptoPriceTracker
+# Crypto Tracker 
 
-## Description
-A cryptocurrency price tracker which gets the 20 most popular cryptocurrencies from the [Coin Gecko API](https://www.coingecko.com/en/api) and displays them in a list with charts using React Native.
+a basic mobile application to showcase my my ability to deal with mobile apps development .
 
-## Set up
-1. `git clone https://github.com/mattfrances/CryptoPriceTracker.git` 
-2. `cd CryptoPriceTracker`
-3. `yarn`
-4. `expo start`
-5. Scan the QR code on screen to run it on your device, or write `i` or `a` in your expo terminal to open it in either iOS or Android
+## First screen 
+basic home page
+
+![Screen Shot 2022-09-28 at 9 43 37 PM](https://user-images.githubusercontent.com/67127725/192885082-d9f59f6b-6e39-4349-9cd5-758aca5a0eea.png)
+
+## Seconda screen 
+list of crypto tokens info, with a bottom modal to show chart and more details .
+
+![Screen Shot 2022-09-28 at 9 44 09 PM](https://user-images.githubusercontent.com/67127725/192885066-54a80a6e-8ceb-4171-8139-dd92fb978869.png)
+
 
