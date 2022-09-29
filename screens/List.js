@@ -1,5 +1,5 @@
 import React, { useRef, useMemo, useState, useEffect } from 'react'
-import { FlatList, StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import { FlatList, StyleSheet, Button, View, SafeAreaView } from 'react-native'
 import ListItem from '../components/ListItem'
 import Chart from '../components/Chart'
 import {
@@ -32,6 +32,8 @@ export default function List() {
     bottomSheetModalRef.current?.present()
   }
 
+  const closeModal = () => bottomSheetModalRef.current.close()
+
   return (
     <BottomSheetModalProvider>
       {data.length === 0 ? (
@@ -53,7 +55,6 @@ export default function List() {
                 onPress={() => openModal(item)}
               />
             )}
-            // ListHeaderComponent={<ListHeader />}
           />
         </SafeAreaView>
       )}
@@ -63,6 +64,7 @@ export default function List() {
         snapPoints={snapPoints}
         style={styles.bottomSheet}
       >
+        <Button onPress={closeModal} title="close" color="#333" />
         {selectedCoinData ? (
           <Chart
             currentPrice={selectedCoinData.current_price}
